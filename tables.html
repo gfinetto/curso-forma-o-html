@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trilha HTML 5 DIO - Tabelas</title>
+    <style>
+        
+        table {
+            border: solid 1px black;
+
+        }
+       table thead th{
+        background-color: black;
+        color: white;
+       }
+       table tfoot td{
+        background-color: lightgray;
+       }
+       table tbody tr:nth-child(even) td {
+        background-color: #f1f1f1;
+       }
+       table tbody tr:hover td {
+        background-color: #e9e9e9;
+        cursor: pointer;
+       }
+    </style>
+</head>
+<body>
+    <table summary="Tabela dos dados dos profissionais do time de desenvolvimento do projeto" width="320" align="center" cellspacing="0" cellpadding="5">
+        <caption><b>Tabela de dados dos profissionais do time de desenvolvimento do projeto</b></caption>
+        <tr>
+            <thead>
+            <th title="Nome Completo">Nome</th>
+            <th>Idade</th>
+            <th>Sexo</th>
+            <th>Profissão</th>
+        </thead>    
+        </tr>  
+
+        <tbody>
+        <tr>
+            <td>Gabriel</td>
+            <td>34</td>
+            <td>Masculino</td>
+            <td>Desenvolvedor</td>
+        </tr>    
+        <tr>
+            <td>José</td>
+            <td>25</td>
+            <td>Masculino</td>
+            <td>UX Designer</td>
+        </tr> 
+        <tr>
+            <td>Maria</td>
+            <td>29</td>
+            <td>Feminino</td>
+            <td>Desenvolvedora Front-end</td>   
+        </tr>
+        <tr>
+            <td>Giovanni</td>
+            <td>22</td>
+            <td>Masculino</td>
+            <td>DevOps</td>   
+        </tr>
+        <tr>
+            <td>Marcela</td>
+            <td>33</td>
+            <td>Feminino</td>
+            <td>Designer Senior</td>   
+        </tr>
+    </tbody>
+    <tfoot>
+        <td>Total</td>
+        <td></td>
+        <td></td>
+        <td>5</td>
+    </tfoot>
+    </table>
+</body>
+</html>
